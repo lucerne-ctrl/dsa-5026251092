@@ -1,3 +1,5 @@
+package lw01.prelab;
+
 public abstract class PrintJob implements Chargable {
     private String id;
     private int pages;
@@ -23,6 +25,9 @@ public abstract class PrintJob implements Chargable {
         if (copies <= 0) throw new IllegalArgumentException("Copies must be positive");
         return copies * calculateCharge();
     }
+
+    //overload dalam kelas sama, parameter beda, nama method sama
+    // override beda kelas, parameter sama, nama method sama
 
     public String label() {
         return "Print";
