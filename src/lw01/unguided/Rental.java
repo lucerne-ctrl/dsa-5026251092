@@ -29,6 +29,10 @@ public abstract class Rental implements Chargeable{
         return "Rental";
     }
 
+    public String summary() {
+        return id + " | " + label() + " | " + calculateCharge();
+    }
+
     public String summary(int units) {
         return id + " | " + label() + " | " + calculateCharge(units);
     }
