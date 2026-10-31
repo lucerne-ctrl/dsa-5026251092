@@ -32,17 +32,16 @@ public class Main {
 
         System.out.println();
         for(int num : targets) {
-            int index = -1;
+            boolean is = false;
             for(int i = 0;i<branchAmount;i++) {
                 if(stabilityValue[i]==num) {
-                    index = i;
+                    System.out.println(num + ": FOUND at index " + i);
+                    is = true;
                     break;
                 }
             }
-            if(index==-1) {
+            if(!is) {
                 System.out.println(num + ": NOT FOUND");
-            }else{
-                System.out.println(num + ": FOUND at index " + index);
             }
         }
     }
