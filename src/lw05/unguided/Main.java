@@ -204,7 +204,7 @@ public class Main {
         if (bfsPath.size() == dijkstraPath.size()) {
             System.out.println("Both routes are the same.");
         } else {
-            System.out.println("The fastest route saves " + (pathTime(bfsPath) - pathTime(dijkstraPath)) + " min but needs " + (dijkstraPath.size() - bfsPath.size()) + " more stops.");
+            System.out.println("The fastest route saves " + Math.abs(pathTime(bfsPath) - pathTime(dijkstraPath)) + " min but needs " + Math.abs(dijkstraPath.size() - bfsPath.size()) + " more stops.");
         }
     }
 }
