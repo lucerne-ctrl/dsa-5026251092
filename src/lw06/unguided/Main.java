@@ -15,23 +15,23 @@ public class Main {
         for (int i : score) {
             a.insert(i);
         }
-        System.out.print("Preorder: ");
+        System.out.print("Preorder : ");
         a.preOrder();
 
-        System.out.print("Inorder: ");
+        System.out.print("Inorder : ");
         a.inOrder();
 
-        System.out.print("Postorder: ");
+        System.out.print("Postorder : ");
         a.postOrder();
 
         int target = read.nextInt();
         System.out.println("Search " + target + " : " + a.search(target));
 
         int min = a.findMin();
-        System.out.println("Minimun: " + min);
+        System.out.println("Minimun : " + min);
 
         int max = a.findMax();
-        System.out.println("Maximum: " + max);
+        System.out.println("Maximum : " + max);
         read.close();
     }
 }
